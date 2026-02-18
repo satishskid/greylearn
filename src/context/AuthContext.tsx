@@ -92,7 +92,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
                 // Auto-approve/admin specific emails
                 // Replace with your actual admin emails or environment variables
-                const adminEmails = ["satish@skids.health", "satish.rath@gmail.com"];
+                const adminEmails = ["satish@skids.health", "satish.rath@gmail.com", "drpratichi@skids.health"];
                 if (user.email && adminEmails.includes(user.email)) {
                     newUserData.role = 'admin';
                     newUserData.status = 'approved';
